@@ -1,0 +1,64 @@
+/*                              Creado por: [Arbey]
+Descripción: Aplicación SPA para generar RFC y consultar una API REST
+Uso: Este archivo estructura la interfaz de la aplicación web que permite generar un RFC a partir
+de los datos ingresados
+y consultar un recurso externo a través de una API REST. */
+
+/* Contenedor principal que divide las secciones */
+.container {
+    display: flex; /* Distribuir los elementos en columnas */
+    justify-content: space-around; /* Espacio uniforme entre los formularios */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+/* Estilo general para las secciones de los formularios */
+.form-section {
+    width: 45%; /* Cada formulario ocupa el 45% del ancho */
+    background-color: #f0f0f0; /* Fondo claro de las secciones */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para los títulos dentro de las secciones */
+h1 {
+    background-color: #8c030384; /* Fondo rojo claro */
+    padding: 10px;
+    text-align: center; /* Centrar el texto */
+    border-radius: 5px;
+    color: #000; /* Texto negro */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"], input[type="date"] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 8px;
+    margin: 5px 0 15px 0; /* Margen entre los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Ajuste del ancho incluyendo padding y borde */
+}
+
+/* Estilo para los botones */
+button {
+    width: 100%; /* Botón ocupa todo el ancho */
+    padding: 10px;
+    background-color: #3ba993be; /* Fondo verde pastel */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a puntero */
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #45a049; /* Cambia a un verde más oscuro al pasar el cursor */
+}
+
+/* Estilo para las etiquetas */
+label {
+    font-weight: bold; /* Texto en negrita */
+    display: block;
+    margin-top: 10px;
+}

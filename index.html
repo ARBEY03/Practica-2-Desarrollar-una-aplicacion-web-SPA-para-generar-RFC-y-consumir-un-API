@@ -1,0 +1,74 @@
+<!--                            Creado por: [Arbey]
+Descripción: Aplicación SPA para generar RFC y consultar una API REST
+Uso: Este archivo estructura la interfaz de la aplicación web que permite generar un RFC a partir
+de los datos ingresados
+y consultar un recurso externo a través de una API REST.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC y API REST</title>
+    
+    <!-- Enlace al archivo CSS para estilos -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Enlace a la biblioteca jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Contenedor principal que divide las secciones en dos columnas -->
+    <div class="container">
+        
+        <!-- Sección del formulario de RFC -->
+        <div class="form-section">
+            <h1>PRÁCTICA 2 - RFC</h1>
+            <form id="rfc-form">
+                <!-- Campo para ingresar el nombre -->
+                <label for="nombre">Nombre(s):</label>
+                <input type="text" id="nombre" required>
+
+                <!-- Campo para ingresar el primer apellido -->
+                <label for="primer-apellido">Apellido Paterno:</label>
+                <input type="text" id="primer-apellido" required>
+
+                <!-- Campo para ingresar el segundo apellido -->
+                <label for="segundo-apellido">Apellido Materno:</label>
+                <input type="text" id="segundo-apellido">
+
+                <!-- Campo para ingresar la fecha de nacimiento -->
+                <label for="fecha-nacimiento">Fecha Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" required>
+
+                <!-- Botón para generar el RFC -->
+                <button type="submit">Generar un RFC</button>
+
+                <!-- Campo para mostrar el RFC generado (solo lectura) -->
+                <label for="rfc">RFC:</label>
+                <input type="text" id="rfc" readonly>
+            </form>
+        </div>
+
+        <!-- Sección del formulario para la consulta a la API REST -->
+        <div class="form-section">
+            <h1>AJAX - API REST</h1>
+            <form id="api-form">
+                <!-- Botón para consultar la API REST -->
+                <button type="submit">Consultar API REST</button>
+
+                <!-- Campo para mostrar el nombre devuelto por la API (solo lectura) -->
+                <label for="nombre-api">Nombre:</label>
+                <input type="text" id="nombre-api" readonly>
+
+                <!-- Campo para mostrar el email devuelto por la API (solo lectura) -->
+                <label for="email-api">Email:</label>
+                <input type="text" id="email-api" readonly>
+            </form>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
